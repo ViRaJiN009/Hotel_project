@@ -1,0 +1,16 @@
+{
+    "name": "Diversity Hotel and Resort",
+    "short_name": "Diversity",
+    "description": "Hotel app",
+    "start_url": "./Home page.html",
+    "icons": [
+        {
+            "src": "./android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

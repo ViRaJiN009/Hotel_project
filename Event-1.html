@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event one</title>
+    <link rel="stylesheet" href="./EventOnestyle.css" type="text/css">
+</head>
+<body>
+   <article class="event-banner">
+    <article class="container">
+      <section class="navbar">
+          <img src="./logo_transparent.png" alt="Hotel Logo" class="logo">
+          <nav>
+              <ul id="menuList">
+                  <li><a href="./Index.html">Home</a></li>
+                  <li><a href="./Event-1.html">Event One</a></li>
+                  <li><a href="./Event-2.html">Event Two</a></li>
+                  <li><a href="./Booking.html">Book Now</a></li>
+              </ul>
+          </nav>
+          <img src="./menu.png" alt="Menu Icon" class="menu-icon" onclick="togglemenu()">
+      </section>  
+  </article>
+  <section class="main-content">
+    <section class="wrapper">
+     <h1>Weddings and Special Events at Our Hotel</h1>
+     <section class="button">
+      <a href="./Booking.html">Book Now</a>
+     </section>
+    </section>
+
+  </section>
+   </article>
+   <section class="info">
+    <p>
+      At our hotel, we understand that life's most precious moments deserve to be celebrated in style. Whether you're planning a grand wedding, an intimate anniversary party, a milestone birthday bash, or any special event, our dedicated event team is here to turn your dreams into reality.
+    </p>
+    <h3>A Magical Venue</h3>
+    <p>
+      Our hotel provides a stunning backdrop for your special day or event. Choose from a variety of elegant and versatile event spaces, from our spacious ballroom with dazzling chandeliers to our serene garden terrace overlooking breathtaking views. No matter the size or theme of your celebration, we have the perfect setting to create unforgettable memories.
+    </p>
+    <h3>Tailored to Perfection</h3>
+    <p>
+      We believe that every event should be as unique as the individuals it celebrates. Our experienced event planners will work closely with you to curate a personalized experience, from customizing the menu with gourmet cuisine to arranging decor that reflects your vision. Your event will be a reflection of your style, ensuring an unforgettable experience for you and your guests.
+    </p>
+    <h3>Exquisite Dining</h3>
+    <p>
+      Indulge in culinary delights that will tantalize your taste buds and leave your guests raving. Our talented chefs are dedicated to crafting a menu that suits your preferences, whether it's a gourmet feast, a themed buffet, or a selection of delectable hors d'oeuvres. We cater to dietary restrictions and special requests to ensure everyone enjoys the celebration.
+    </p>
+    <h3>Seamless Service</h3>
+    <p>
+      Our professional and attentive staff is committed to providing top-notch service. From the moment you inquire about our event services until the last guest departs, we'll be there to ensure every detail is executed flawlessly. Your peace of mind is our priority.
+    </p>
+    <h4>
+      At our hotel, we don't just host events; we create experiences that will be etched in your heart forever. Let us be a part of your special moments and turn them into memories that will last a lifetime.
+    </h4>
+   </section>
+    <article class="slideshow-container">
+
+      <section class="mySlides fade">
+        <section class="numbertext">1 / 4</section>
+        <img src="./weddingPhoto5.webp" style="width:100%">
+        <section class="text">Caption Text</section>
+      </section>
+      
+      <section class="mySlides fade">
+        <section class="numbertext">2 / 4</section>
+        <img src="./WeddingPhoto2.webp" style="width:100%">
+        <section class="text">Caption Two</section>
+      </section>
+      
+      <section class="mySlides fade">
+        <section class="numbertext">3 / 4</section>
+        <img src="./WeddingPhoto3.webp" style="width:100%">
+        <section class="text">Caption Three</section>
+      </section>
+      
+      <section class="mySlides fade">
+        <section class="numbertext">4 / 4</section>
+        <img src="./WeddingPhoto4.webp" style="width:100%">
+        <section class="text">Caption Three</section>
+      </section>
+    </article>
+      <br>
+      
+      <section style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>  
+      </section>
+      <footer>
+        <article class="container">
+            <section class="footer-main">
+                <section class="footer-column">
+
+                    <a href="#" class="footer-link">(+94) 081 2735883</a>
+                    <a href="#" class="footer-link">diversityhotel@info.com</a>
+                    <a href="#" class="footer-link">01, Colombo Street, Kandy, Sri Lanka</a>
+    
+                </section>
+                <section class="footer-column">
+                    <h3 class="fotter-heading">Quick Links</h3>
+                    <a href="./Adventure.html" class="footer-link">Adventure</a>
+                    <a href="./Booking.html" class="footer-link">Booking</a>
+                    <a href="./Restaurant.html" class="footer-link">Restaurant</a>
+    
+                </section>
+                <section class="footer-column">
+                    <h3 class="fotter-heading">Social Media</h3>
+                    <a href="#" class="footer-link">Facebook</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">LinkedIn</a>
+    
+                </section>
+    
+            </section>
+            <section class="footer-bottom">
+                
+                <span class="copyright">&copy; 2023 Diversity Hotel & Resort. All Rights Reserved</span>
+            </section>
+            
+        </article>
+    </footer> 
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if( menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+
+        let slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+    </script>
+</body>
+</html>

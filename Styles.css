@@ -1,0 +1,748 @@
+:root{
+    --main-color:#154c79;
+    --Secondry-color: #74d2f5;
+    --main-text-color: #fff;
+    --secondry-text-color: #090235;
+    --main-font-style: Arial, Helvetica, sans-serif;
+    --secondry-font-style: 'Brush Script MT', cursive;
+    --box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 24px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+  overflow-x: hidden;
+}
+.main-banner{
+    max-width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./HomePhoto.webp);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+    background-color: var(--main-color);
+    background-size: cover;
+}
+a:link,
+a:visited {
+  color: var(--main-text-color);
+  
+}
+nav ul,
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav a:link,
+nav a:visited {
+  background-color: var(--main-color);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border: 1px solid #fff;
+  padding: 10px;
+  color: var(--main-text-color);
+  font-family: var(--main-font-style);
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--Secondry-color);
+}
+.main-content{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    
+    color: var(--main-text-color);
+}
+.main-content h1{
+    font-size: 38px;
+    margin-top: 50px;
+    padding: 0 60px;
+    font-family: var(--main-font-style);
+    cursor: pointer;
+    
+}
+.main-content h1:hover{
+    color: var(--Secondry-color);
+}
+.main-content h2{
+    margin-top: 60px;
+    font-size: 30px;
+     font-family:  var(--secondry-font-style);
+     
+ }
+ .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .book-now-button {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--main-color); 
+    color: #fff; 
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+  }
+  
+  .book-now-button:hover {
+    background-color: #2596be;
+  }
+  
+  .book-now-button:focus {
+    outline: none;
+  }
+  .info-banner{
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(#154c79,#154c79,#74d2f5);
+  }
+  .info-banner h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    color: var(--main-text-color);
+    font-family: var(--secondry-font-style);
+  }
+  .info-banner p{
+    text-align: justify;
+    margin-top: 30px;
+    padding: 1rem;
+    font-size: 18px;
+    font-family: var(--main-font-style);
+    color: var(--main-text-color);
+    line-height: 1.5;
+  }
+  .info-banner h3{
+    margin-top: 50px;
+    padding-left: 70px;
+    font-family: var(--main-font-style);
+    color: var(--main-text-color);
+    margin-bottom: 40px;
+  }
+  .icon-container{
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    margin: 0 30px;
+    border-radius: 1rem;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 24px;
+  }
+  .icon-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: center;
+    font-family: var(--main-font-style);
+    font-size: 15px;
+  }
+  .icon-container li{
+    padding: 0 60px;
+    list-style: none;
+    color: #090235;
+  }
+  .icon-container ul img{
+    width: 70px;
+    display: flex;
+  }
+  .icon-container ul img{
+    margin-left: 30%;
+  }
+  .info-banner ol{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+  }
+  .info-banner ol li{
+    padding: 10px;
+    flex: 50%;
+    font-family: var(--main-font-style);
+    color: var(--main-text-color);
+  }
+  .adventure-img{
+    max-width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./AD-hiking.webp);
+    background-size: cover;
+    background-position: center;
+    position: static;
+    margin-top: 30px;
+  }
+  .adventure-img h2{
+    padding: 60px 0;
+    font-size: 70px;
+  }
+  .adventure-img p{
+    margin-top: 5px;
+  }
+  .bottom-content{
+    padding: 40px 0;
+  }
+  .bottom-content p{
+    color: var(--secondry-text-color);
+  }
+  .gallry-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+  .gallry-container img{
+    width: 300px;
+    border: #fff solid 1rem;
+    box-shadow: rgba(15, 15, 15, 0.2) 0px 8px 24px;
+  }
+
+  /*Branches Page -------------------------------------------------------------------------------------------------------------------*/
+
+  .branches-main-banner{
+    max-width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./SildePhoto1.webp);
+    background-size: cover;
+    background-position: center;
+  }
+  .branches-banner{
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(#154c79,#154c79,#74d2f5);
+  }
+  .branch1,
+  .branch2,
+  .branch3,
+  .branch4{
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    margin-top: 30%;
+    margin-bottom: 140%;
+  }
+  .branch1{
+    background-image: url(./Tricomlee.webp);
+  }
+  .branch2{
+    background-image: url(./Arugambay.webp);
+  }
+  .branch3{
+    background-image: url(./SildePhoto1.webp);
+  }
+  .branch4{
+    background-image: url(./Galle.webp);
+  }
+  .branch-container{
+    background-color: var(--main-text-color);
+    max-width: 80%;
+    margin-left: 10%;
+    position: relative;
+    height: 630px;
+    top: 150px;
+  }
+  .branch-container h2,p{
+    font-family: var(--main-font-style);
+  }
+  .branch-container h2{
+    padding: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border: #fff solid 0.5rem;
+    color: var(--main-text-color);
+  }
+  .branch-container p{
+  color: var(--secondry-text-color);
+   text-align: justify;
+   padding: 0 50px;
+   line-height: 1.5;
+  }
+  .branch-map{
+    padding: 30px 5px;
+    width: 10px;
+  }
+  .branches-bottom-content{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .branches-bottom-content p{
+    margin-top: 15%;
+    padding: 20px 60px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .branch-table{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-font-style);
+  }
+  .branch-table table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid var(--secondry-text-color);
+  }
+  .branch-table th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--secondry-text-color);
+  }
+  .branch-table{
+    color: var(--secondry-text-color);
+  }
+  .branch-table tr:hover {
+    background-color: #f5f5f5;
+}
+.branch-table tfoot {
+    color: var(--secondry-text-color);
+    text-align: right;
+}
+
+/*Adventure Page ------------------------------------------------------------------------------------------------------------------ */
+
+
+.adventure-main-banner{
+  max-width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./adventuer-banner.webp);
+  background-size: cover;
+  background-position: center;
+}
+.adventure-info-banner{
+  width: 100%;
+  position: absolute;
+  background-image: linear-gradient(#154c79,#154c79,#74d2f5);
+}
+.adventure, 
+.adventure-2, 
+.adventure-3,
+.adventure-4,
+.adventure-5{
+  margin: 2rem;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  font-family: var(--main-font-style);
+  background-position: center;
+  background-size: cover;
+}
+.adventure{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./AD-diving.webp);
+}
+.adventure-2{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./AD-hiking.webp);
+}
+.adventure-3{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./whale-watching.webp);
+  background-position: bottom;
+}
+.adventure-4{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./surfing.webp);
+}
+.adventure-5{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./Wildlife\ Safaris.webp);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--main-text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.adventure-description p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  padding: 1rem;
+  text-align: justify;
+}
+
+.adventure-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.adventure-map {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+}
+.adventure-map p{
+  color: var(--main-text-color);
+  padding: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+.adventure-map iframe{
+  padding: 1rem;
+  width: 250px;
+  height:150px;
+}
+
+/*Restaurent Page ------------------------------------------------------------------------------------------------------------------ */
+
+
+.restaurant-main-banner{
+  max-width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./Rest2.webp);
+  background-size: cover;
+  background-position: center;
+}
+.restaurant-info-banner{
+  background-image: linear-gradient(#154c79,#154c79,#74d2f5);
+  position: absolute;
+  width: 100%;
+}
+.restaurant {
+  margin: 2rem;
+  padding: 1em;
+  background-color: var(--main-text-color);
+  border-radius: 5px;
+  font-family: var(--main-font-style);
+  box-shadow: var(--box-shadow);
+}
+
+.restaurant img {
+  max-width: 100%;
+  height: auto;
+}
+
+.restaurant h2 {
+  margin-top: 1em;
+  font-size: 2em;
+  text-align: center;
+  color: var(--secondry-text-color);
+}
+
+.restaurant p {
+  margin-top: 0.5em;
+  font-size: 1.2rem;
+  padding: 2rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.restaurant a {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 35%;
+}
+
+.events {
+  margin: 2em;
+  font-family: var(--main-font-style);
+}
+
+.events h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: var(--main-color);
+}
+.event-button{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Event Page  links------------------------------------------------------------------------------------------------------------------ */
+.event-button a {
+  font-weight: bold;
+  margin-top: 1em;
+  text-decoration: none;
+  color: crimson;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.event-button a:hover{
+  background-color: #000;
+  color: #fff;
+}
+.events p {
+  margin-top: 0.5em;
+}
+
+
+/*Booking Page ------------------------------------------------------------------------------------------------------------------ */
+
+  .booking-banner{
+    max-width: 100%;
+    height: 230vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./BookPhoto.webp);
+    background-size: cover;
+    background-position: center;
+  }
+.booking-content{
+  font-size: 50px;
+  margin-top: 80px;
+  font-family:  var(--main-font-style);
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.booking-form {
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(#154c79,#74d2f5);
+  border-radius: 1rem;
+  box-shadow: #cdcbcb 0px 8px 24px;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--secondry-font-style);
+  color: #fff;
+  font-size: 40px;
+}
+
+.booking-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.booking-form label{
+  color: #fff;
+}
+
+.booking-form label,
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: var(--main-font-style);
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  background-color: #154c79;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.booking-form button:hover{
+  background-color: #2596be;
+}
+footer {
+  padding: 4rem 1rem;
+  background-image: linear-gradient(rgb(28, 28, 28),rgb(28, 28, 28),rgb(74, 73, 73));
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  position:relative;
+}
+footer a {
+  color: #F9F9FA;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #cccccc;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.footer-column {
+  flex-basis: 200px;
+  flex-grow: 1;
+  text-align: center;
+}
+.footer-heading {
+  margin-bottom: 1rem;
+}
+.footer-link {
+  display: block;
+  width: max-content;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+.footer-bottom {
+  display: flex;
+  
+}
+.copyright {
+  margin-right: auto;
+  
+}
+.footer-social {
+  font-size: 25px;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+    .logo{
+        width: 250px;
+    }
+    nav{
+        height: 90px;
+        background-color: var(--main-color);
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a:link,
+    nav a:visited{
+        border: none;
+    }
+    nav li{
+        text-align: center;
+    }
+    .main-banner{
+        height: 100vh;
+    }
+    .main-content{
+        transform: translateY(-50%);
+    }
+    .main-content h1{
+        font-size: 70px;
+    }
+    .main-content h2{
+        font-size: 50px;
+    }
+    .info-banner p{
+        font-size: 23px;
+        padding: 0 70px;
+    }
+    .icon-container ul{
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: none;
+    }
+    .icon-container ul img{
+        width: 100px;
+    }
+    .info-banner ul{
+        font-size: 18px;
+    }
+    .icon-container ul .img-1{
+      margin-left: 60px;
+    }
+    .adventure-img{
+      height: 70vh;
+    }
+    .gallry-container img{
+      width: 400px;
+    }
+    .branch1,
+    .branch2,
+    .branch3,
+    .branch4{
+      width: 90%;
+      height: 500px;
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-bottom: 15%;
+      background-position: center;
+    }
+    .branch-container{
+      max-width: 40%;
+      margin-left: 10%;
+      height: 630px;
+      top: -40px;
+    }
+    .branch-map iframe{
+      padding-top: 30px;
+      width: 400px;
+      height: 270px;
+      margin-left: 65PX;
+    }
+    .adventure, 
+    .adventure-2, 
+    .adventure-3, 
+    .adventure-4,
+    .adventure-5{
+      margin: 8rem;
+    }
+    .adventure-map {
+      flex-direction: row;
+      justify-content: space-between; 
+    }
+    .adventure-map iframe{
+      width: 400px;
+      height: 300px;
+    }
+    .restaurant {
+      margin: 8em;
+    }
+    .restaurant a {
+      margin-left: 45%;
+    }
+    .booking-banner{
+      height: 190vh;
+    }
+    .branches-bottom-content p{
+      font-size: 24px;
+    }
+    .booking-content{
+      padding: 50px;
+    }
+    .booking-form{
+      max-width: 600px;
+    }
+    .footer-main {
+      flex-direction: row;
+
+  }
+@media screen and (min-width: 70em) {
+   
+}  
+    nav li {
+      flex: 1;
+    }
+  }
+  
+  
+  
+  
+  
+  
+    
+  

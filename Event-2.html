@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./EventTwoStyle.css" type="text/css">
+</head>
+<body>
+    <article class="container">
+        <section class="navbar">
+            <img src="./logo_transparent.png" alt="Hotel Logo" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="./Index.html">Home</a></li>
+                    <li><a href="./Event-1.html">Event One</a></li>
+                    <li><a href="./Event-2.html">Event Two</a></li>
+                    <li><a href="./Booking.html">Book Now</a></li>
+                </ul>
+            </nav>
+            <img src="./menu-2.png" alt="Menu Icon" class="menu-icon" onclick="togglemenu()">
+        </section>  
+    </article>
+    <article class="content">
+        <h1>Groove to the Beat: Unleash the Night</h1>
+        <section class="wrapper">
+            <svg>
+                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                    Groove to the Beat: Unleash the Night 
+                </text>
+            </svg>
+        </section>
+        <p>
+            Get ready to turn up the volume and let loose because it's time to dance the night away at our electrifying DJ Party event! Join us for an unforgettable evening of pulsating beats, dazzling lights, and non-stop fun as we transform our hotel into the ultimate party destination.
+        </p>
+        <h3>What to Expect</h3>
+        <ul>
+            <li>
+                A Sonic Adventure: Feel the music come alive as you dance beneath the dazzling lights of our state-of-the-art sound and lighting system. Our venue will be transformed into a sensory wonderland, creating an atmosphere that's nothing short of euphoric.
+            </li>
+            <li>
+                Gourmet Delights: Fuel your dancing spirit with a selection of delectable bites and signature cocktails crafted by our talented mixologists. Whether you're craving savory treats or something sweet, we've got you covered.
+            </li>
+            <li>
+                Interactive Entertainment: Keep an eye out for surprise performances and interactive entertainment that will take your party experience to the next level. From dancers to live percussionists, you never know what's in store!
+            </li>
+            <li>
+                VIP Experience: Elevate your night with our VIP packages that include exclusive seating, bottle service, and personalized attention from our dedicated staff. It's the ultimate way to make your night truly special.
+            </li>
+        </ul>
+        <h2>Don't Miss Out!</h2>
+    </article>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if( menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px"
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
